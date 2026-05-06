@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="alert alert-success">
+    <h4>Data Berhasil Dikirim</h4>
+    <p>Nama: {{ nama }}</p>
+    <p>Email: {{ email }}</p>
+</div>
+
+<a href="/" class="btn btn-success">Kembali</a>
+{% endblock %}
