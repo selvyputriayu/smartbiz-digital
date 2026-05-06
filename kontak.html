@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Kontak Kami</h2>
+
+<form method="POST" class="col-md-6">
+    <input type="text" name="nama" class="form-control mb-2" placeholder="Nama" required>
+    <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+    <button class="btn btn-primary">Kirim</button>
+</form>
+
+{% endblock %}
