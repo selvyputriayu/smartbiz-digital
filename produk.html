@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Produk Kami</h2>
+
+<div class="row">
+{% for item in produk %}
+<div class="col-md-4">
+    <div class="card p-3 mb-3 shadow-sm">
+        <h5>{{ item.nama }}</h5>
+        <p>{{ item.deskripsi }}</p>
+        <b>{{ item.harga }}</b>
+        <p class="text-muted">Pembayaran via Mobile Banking</p>
+        <a href="/kontak" class="btn btn-success mt-2">Beli</a>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+<hr>
+
+<h4>Metode Pembayaran</h4>
+<ul>
+    <li>Transfer Bank (BCA, BRI, Mandiri)</li>
+    <li>Mobile Banking</li>
+    <li>Virtual Account</li>
+</ul>
+
+{% endblock %}
